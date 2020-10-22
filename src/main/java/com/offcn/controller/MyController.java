@@ -17,6 +17,7 @@ public class MyController {
         model.addAttribute("message",message);
         System.out.println("hello========s");
         System.out.println("更改了输出了99999");
+        System.out.println("sssee");
         return "index";
     }
 
