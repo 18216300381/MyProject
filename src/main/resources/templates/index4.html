@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这个是index页面
+<h1 th:text="${username}"></h1>
+<!--给属性赋值-->
+<input type="text" name="name"  th:value="${username}">
+
+<!--字符串的拼接-->
+<span th:text="'欢迎'+${username}+'去开始，科科都过'"></span>
+<!--字符串的拼接2-->
+<span th:text="|欢迎:${username}去考试|"></span>
+</body>
+</html>

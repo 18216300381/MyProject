@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这个是index页面
+时间的格式化<span th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}"></span>
+<br>
+<p th:text="${#strings.abbreviate(str,20)}"></p><br>
+<!--判空处理-->
+<span th:text="${!#strings.isEmpty(str2)}">不为空</span><br>
+<!--截取操作-->
+<span th:text="${#strings.substring(str2,0,3)}"></span>
+</body>
+</html>

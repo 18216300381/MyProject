@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="../static/css/my.css">-->
+    <link rel="stylesheet"  th:href="@{css/my.css}">
+</head>
+<body>
+<!--include-->
+<div th:include="~{head  :: head}">
+
+</div>
+<!--insert-->
+<div th:insert="~{head  :: head}">
+
+</div>
+
+<!--replace-->
+<div th:replace="~{head  :: head}">
+
+</div>
+这个是index页面
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这个是index页面
+<table width="300px" style="text-align: center">
+    <tr>
+        <th>序号</th>
+        <th>用户的id</th>
+        <th>用户名字</th>
+        <th>用户年龄</th>
+
+    </tr>
+    <tr th:each="user,itemStat:${userList}">
+        <!--索引从0开始-->
+        <!--<td th:text="${itemStat.index+1}"></td>-->
+        <!--索引从1开始-->
+        <td th:text="${itemStat.count}"></td>
+        <!--集合的大小-->
+        <!--<td th:text="${itemStat.size}"></td>-->
+        <!--当前对象-->
+        <!--<td th:text="${itemStat.current}"></td>-->
+        <!--奇偶-->
+        <!--<td th:text="${itemStat.even}"></td>
+        <td th:text="${itemStat.odd}"></td>-->
+        <!--第一个和最后一个-->
+       <!-- <td th:text="${itemStat.first}"></td>-->
+        <!--<td th:text="${itemStat.last}"></td>-->
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
