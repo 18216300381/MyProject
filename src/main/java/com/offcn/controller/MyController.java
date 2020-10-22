@@ -15,6 +15,7 @@ public class MyController {
         System.out.println("============");
         String message = "hello thymeleaf";
         model.addAttribute("message",message);
+        System.out.println("hello========s");
         return "index";
     }
 
